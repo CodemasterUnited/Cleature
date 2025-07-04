@@ -1,0 +1,31 @@
+[project]
+name = "cleature"
+version = "0.1.0"
+description = "A lightweight Python templating engine for CHTML files with includes and variable substitution support."
+authors = [
+    { name = "CodemasterUnited", email = "codemasterunited@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.7"
+
+keywords = ["templating", "static site", "html", "chtml", "include", "variable"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Internet :: WWW/HTTP :: Site Management"
+]
+
+dependencies = []
+
+[project.scripts]
+cleature = "cleature.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
